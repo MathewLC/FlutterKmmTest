@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation project(':flutter') because 'flutter ui module'
     implementation project(':domain') because 'domain module'
     implementation project(':datasource') because 'datasource module'
 

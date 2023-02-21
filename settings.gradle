@@ -6,7 +6,7 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    //repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
@@ -14,5 +14,15 @@ dependencyResolutionManagement {
 }
 rootProject.name = "FlutterKMMTest1"
 include ':app'
+
+
+setBinding(new Binding([gradle:this]))
+
+evaluate(new File(
+        settingsDir.parentFile,
+        'flutterui/.android/include_flutter.groovy'
+))
+
 include ':domain'
 include ':datasource'
+
