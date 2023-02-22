@@ -19,7 +19,7 @@ include ':app'
 setBinding(new Binding([gradle:this]))
 
 evaluate(new File(
-        settingsDir.parentFile,
+        settingsDir,
         'flutterui/.android/include_flutter.groovy'
 ))
 
