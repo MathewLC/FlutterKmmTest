@@ -1,5 +1,13 @@
 pluginManagement {
+    ext.storageUrl = System.getenv("FLUTTER_STORAGE_BASE_URL") != null ? System.getenv("FLUTTER_STORAGE_BASE_URL") : "https://storage.googleapis.com"
     repositories {
+        maven {
+            url '/home/mateus/AndroidStudioProjects/FlutterKMMTest1/flutter_ui/build/host/outputs/repo'
+        }
+        maven {
+            url "$storageUrl/download.flutter.io"
+        }
+
         google()
         mavenCentral()
         gradlePluginPortal()
@@ -14,15 +22,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "FlutterKMMTest1"
 include ':app'
-
-
-setBinding(new Binding([gradle:this]))
-
-evaluate(new File(
-        settingsDir,
-        'flutterui/.android/include_flutter.groovy'
-))
-
 include ':domain'
 include ':datasource'
+
 
