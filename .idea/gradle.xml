@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/datasource" />
             <option value="$PROJECT_DIR$/domain" />
+            <option value="$PROJECT_DIR$/domainKMM" />
           </set>
         </option>
       </GradleProjectSettings>

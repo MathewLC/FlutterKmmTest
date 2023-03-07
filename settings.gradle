@@ -33,3 +33,4 @@ evaluate(new File(
 ))
 
 include ':add_to_app_flutter_module'
+include ':domainKMM'
