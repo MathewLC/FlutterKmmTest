@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
-       // listenToPizzas()
+        //listenToPizzas()
         mainBinding.button.setOnClickListener {
             startActivity(
                 Intent(this, Page2Activity::class.java)
@@ -33,5 +33,5 @@ class MainActivity : AppCompatActivity() {
             mainBinding.text1.text =
                 pizzaList.joinToString(separator = "\n") { it.name }
         }
-        }
+    }
 }

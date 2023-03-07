@@ -20,9 +20,9 @@ class MainActivityViewModel(
 
     init {
         viewModelScope.launch(IO){
-//            _pizzaList.postValue(
-//                repository.getListOf()
-//            )
+            _pizzaList.postValue(
+                repository.getListOf()
+            )
         }
     }
 }

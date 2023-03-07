@@ -6,7 +6,7 @@ import 'dart:ui';
 void main() => runApp(chooseWidget(window.defaultRouteName));
 
 @pragma('vm:entry-point')
-void page2() => runApp(const Page2());
+void page2() => runApp(Page2());
 
 Widget chooseWidget(String route) {
   switch (route) {
