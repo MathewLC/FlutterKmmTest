@@ -1,8 +1,8 @@
 package com.example.flutterkmmtest1.pigeons
 
-import com.example.domain.models.PizzaModel
+import com.example.pizzasdomain.models.PizzaModel
 
-fun PizzaModel.toPigeon() : PizzaPigeon.Pizza =
+fun com.example.pizzasdomain.models.PizzaModel.toPigeon() : PizzaPigeon.Pizza =
     PizzaPigeon.Pizza.Builder()
         .setName(this.name)
         .setId(this.id.toLong())

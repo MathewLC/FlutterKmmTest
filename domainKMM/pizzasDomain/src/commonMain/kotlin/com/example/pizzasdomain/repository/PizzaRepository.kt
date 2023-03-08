@@ -1,8 +1,8 @@
-package com.example.domain.repository
+package com.example.pizzasdomain.repository
 
-import com.example.domain.datasource.IPizzaRemoteDatasource
-import com.example.domain.models.PizzaDetailsModel
-import com.example.domain.models.PizzaModel
+import com.example.pizzasdomain.datasource.IPizzaRemoteDatasource
+import com.example.pizzasdomain.models.PizzaDetailsModel
+import com.example.pizzasdomain.models.PizzaModel
 
 class PizzaRepository (
     private val pizzaRemoteDatasource : IPizzaRemoteDatasource

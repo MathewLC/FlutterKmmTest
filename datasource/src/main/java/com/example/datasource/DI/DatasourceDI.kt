@@ -2,7 +2,7 @@ package com.example.datasource.DI
 
 import com.example.datasource.client.IPizzaClient
 import com.example.datasource.datasource.PizzaRemoteDatasource
-import com.example.domain.datasource.IPizzaRemoteDatasource
+import com.example.pizzasdomain.datasource.IPizzaRemoteDatasource
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

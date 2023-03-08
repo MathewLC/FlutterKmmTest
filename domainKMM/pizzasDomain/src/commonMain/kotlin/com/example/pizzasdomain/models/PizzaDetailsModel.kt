@@ -1,4 +1,4 @@
-package com.example.domain.models
+package com.example.pizzasdomain.models
 
 data class PizzaDetailsModel (
     val id: Int,

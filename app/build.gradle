@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
-    implementation project(':domain') because 'domain module'
+    implementation project(':domainKMM:pizzasDomain') because 'domain module'
     implementation project(':datasource') because 'datasource module'
     implementation project(':flutter') because 'flutter module'
 //    debugImplementation 'com.example.flutter_ui:flutter_debug:1.0'

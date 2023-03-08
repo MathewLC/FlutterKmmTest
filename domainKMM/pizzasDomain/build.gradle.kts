@@ -18,28 +18,26 @@ kotlin {
         iosSimulatorArm64()
     ).forEach {
         it.binaries.framework {
-            baseName = "domainKMM"
+            baseName = "pizzasDomain"
         }
     }
+
+    val koinVersion = "3.3.0"
 
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(project(":domainKMM:pizzasDomain"))
+                api("io.insert-koin:koin-core:$koinVersion")
             }
         }
         val commonTest by getting {
             dependencies {
+                api("io.insert-koin:koin-test:$koinVersion")
                 implementation(kotlin("test"))
             }
         }
         val androidMain by getting
-        val androidTest by getting {
-            dependencies {
-                implementation(kotlin("test-junit"))
-                implementation("junit:junit:4.13.2")
-            }
-        }
+//      val androidUnitTest by getting
         val iosX64Main by getting
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
@@ -62,7 +60,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.example.domainkmm"
+    namespace = "com.example.pizzasdomain"
     compileSdk = 33
     defaultConfig {
         minSdk = 24

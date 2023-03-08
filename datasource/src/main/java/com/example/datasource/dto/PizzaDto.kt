@@ -1,13 +1,13 @@
 package com.example.datasource.dto
 
-import com.example.domain.models.PizzaModel
+import com.example.pizzasdomain.models.PizzaModel
 
 data class PizzaDto(
     val name: String,
     val id: Int
 )
 
-fun PizzaDto.toModel() = PizzaModel(
+fun PizzaDto.toModel() = com.example.pizzasdomain.models.PizzaModel(
     name,
     id
 )

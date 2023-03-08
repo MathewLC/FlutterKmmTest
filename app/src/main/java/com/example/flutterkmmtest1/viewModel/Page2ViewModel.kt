@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.domain.models.PizzaModel
-import com.example.domain.repository.IPizzaRepository
+import com.example.pizzasdomain.models.PizzaModel
+import com.example.pizzasdomain.repository.IPizzaRepository
 import com.example.flutterkmmtest1.pigeons.PizzaPigeon
 import com.example.flutterkmmtest1.pigeons.toPigeon
 import kotlinx.coroutines.Dispatchers.IO
