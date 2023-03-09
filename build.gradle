@@ -11,3 +11,17 @@ allprojects {
         jcenter()
     }
 }
+
+
+tasks.register('build-pigeons', Exec) {
+    workingDir "$rootDir/add_to_app_flutter_module/"
+
+//    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+//        commandLine '' //to be implemented
+//    } else {
+    commandLine './build-pigeon.sh'
+    //}
+
+}
+
+

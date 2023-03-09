@@ -20,7 +20,7 @@ import java.util.HashMap;
 
 /** Generated class from Pigeon. */
 @SuppressWarnings({"unused", "unchecked", "CodeBlock2Expr", "RedundantSuppression"})
-public class PizzaPigeon {
+public class Pigeon {
 
   /** Generated class from Pigeon that represents data sent in messages. */
   public static class Pizza {
@@ -138,6 +138,53 @@ public class PizzaPigeon {
               };
 
               api.getPizzas(resultCallback);
+            }
+            catch (Error | RuntimeException exception) {
+              wrapped.put("error", wrapError(exception));
+              reply.reply(wrapped);
+            }
+          });
+        } else {
+          channel.setMessageHandler(null);
+        }
+      }
+    }
+  }
+  private static class PizzaNavigationApiCodec extends StandardMessageCodec {
+    public static final PizzaNavigationApiCodec INSTANCE = new PizzaNavigationApiCodec();
+    private PizzaNavigationApiCodec() {}
+  }
+
+  /** Generated interface from Pigeon that represents a handler of messages from Flutter.*/
+  public interface PizzaNavigationApi {
+    void navigateToPage3(Result<Void> result);
+
+    /** The codec used by PizzaNavigationApi. */
+    static MessageCodec<Object> getCodec() {
+      return PizzaNavigationApiCodec.INSTANCE;
+    }
+
+    /** Sets up an instance of `PizzaNavigationApi` to handle messages through the `binaryMessenger`. */
+    static void setup(BinaryMessenger binaryMessenger, PizzaNavigationApi api) {
+      {
+        BasicMessageChannel<Object> channel =
+            new BasicMessageChannel<>(binaryMessenger, "dev.flutter.pigeon.PizzaNavigationApi.navigateToPage3", getCodec());
+        if (api != null) {
+          channel.setMessageHandler((message, reply) -> {
+            Map<String, Object> wrapped = new HashMap<>();
+            try {
+              Result<Void> resultCallback = new Result<Void>() {
+                public void success(Void result) {
+                  wrapped.put("result", null);
+                  reply.reply(wrapped);
+                }
+                public void error(Throwable error) {
+                  wrapped.put("error", wrapError(error));
+                  reply.reply(wrapped);
+                }
+              };
+
+              api.navigateToPage3(resultCallback);
             }
             catch (Error | RuntimeException exception) {
               wrapped.put("error", wrapError(exception));

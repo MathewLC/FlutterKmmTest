@@ -13,3 +13,9 @@ abstract class PizzaHostApi{
   @async
   List<Pizza> getPizzas();
 }
+
+@HostApi()
+abstract class PizzaNavigationApi {
+  @async
+  void navigateToPage3();
+}

@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml:2:13-83
+INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml:2:13-83
+INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml:2:13-83
+	package
+		INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+		ADDED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml:2:13-83
+		INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+	xmlns:android
+		ADDED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml:2:23-81
+uses-sdk
+INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml reason: use-sdk injection requested
+INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+	android:targetSdkVersion
+		INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+		ADDED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+		INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+	android:minSdkVersion
+		INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+		ADDED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml
+		INJECTED from /home/mateus/AndroidStudioProjects/FlutterKMMTest1/domainKMM/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest616554645476651767.xml

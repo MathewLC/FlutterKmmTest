@@ -1,21 +1,18 @@
 package com.example.flutterkmmtest1.viewModel
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.pizzasdomain.models.PizzaModel
+import com.example.flutterkmmtest1.pigeons.Pigeon
 import com.example.pizzasdomain.repository.IPizzaRepository
-import com.example.flutterkmmtest1.pigeons.PizzaPigeon
 import com.example.flutterkmmtest1.pigeons.toPigeon
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 
 class Page2ViewModel(
     private val repository: IPizzaRepository
-) : ViewModel(), PizzaPigeon.PizzaHostApi  {
+) : ViewModel(), Pigeon.PizzaHostApi  {
 
-    override fun getPizzas(result: PizzaPigeon.Result<MutableList<PizzaPigeon.Pizza>>?) {
+    override fun getPizzas(result: Pigeon.Result<MutableList<Pigeon.Pizza>>?) {
         viewModelScope.launch(IO) {
             try {
                 result?.success(
